@@ -82,7 +82,7 @@ public class Runner {
 			} catch (IOException e) {
 				e.printStackTrace();
 			}
-			System.out.println("Finished: ");
+			System.out.println("Finished\nCheck 'output.txt' File ");
 		}
 	}
 
