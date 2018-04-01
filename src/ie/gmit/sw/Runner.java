@@ -5,7 +5,7 @@
  * Title: Rapid Encryption using the Four-Square Cipher
  */
 
-// Package Name
+// Package Name: ie.gmit.sw
 package ie.gmit.sw;
 
 // Imports

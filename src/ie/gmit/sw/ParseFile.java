@@ -1,45 +1,53 @@
+/*
+ * Student Name: Usman Sattar
+ * Student Number: G00345816
+ * 
+ * Title: Rapid Encryption using the Four-Square Cipher
+ */
+
+// Package Name: ie.gmit.sw
 package ie.gmit.sw;
 
+// Imports
 import java.io.*;
 import java.util.*;
 
 // File Parser Class
-
 public class ParseFile {
 
 	// Instance Variables
 	private List<String> fileContents = new ArrayList<String>();
 
-	// constructor with file name input (string)
+	// fileName Input With Constructor
 	public ParseFile(String fileName) {
 		this.parse(fileName);
-
 	}
 
 	public void parse(String fileName) {
-		BufferedReader br = null;// make a new BufferedReader
+		// New BufferedReader
+		BufferedReader br = null;
 		try {
-			// BufferedReader extract the filename
+			// BufferedReader Extract fileName
 			br = new BufferedReader(new InputStreamReader(new FileInputStream(fileName)));
 		} catch (FileNotFoundException e) {
 
 			e.printStackTrace();
 		}
 
-		// output to list
+		// Output To List
 		StringBuffer bw = null;
 
 		try {
-			// create the StringBuffer to append the string
+			// Create StringBuffer To Append The String
 			bw = new StringBuffer();
-			// create the string to copy the file
+			// Create String To Copy The File
 			String copy = "";
 
 			while ((copy = br.readLine()) != null) {
 				bw.append(copy + "\n");
-				// splitting the line on one or more
+				// Line Split
 				String[] words = copy.split("\\s+");
-				// add it to the arraylist
+				// Adding It To The ArrayList
 				fileContents.addAll(Arrays.asList(words));
 
 			}
@@ -49,14 +57,14 @@ public class ParseFile {
 
 	}// Parses
 
-	// populate the array from the list array at the top to a new one
+	// Populating The Array From The List Array To A New One
 	public List<String> getList() {
-		List<String> fileC = new ArrayList<String>();
+		List<String> fileP = new ArrayList<String>();
 
 		for (String string : fileContents) {
-			fileC.add(string);
+			fileP.add(string);
 		}
-		return fileC;
+		return fileP;
 	}
 
 }

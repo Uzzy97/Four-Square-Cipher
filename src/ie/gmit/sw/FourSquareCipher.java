@@ -1,3 +1,11 @@
+/*
+ * Student Name: Usman Sattar
+ * Student Number: G00345816
+ * 
+ * Title: Rapid Encryption using the Four-Square Cipher
+ */
+
+// Package Name: ie.gmit.sw
 package ie.gmit.sw;
 
 public class FourSquareCipher {

@@ -1,33 +1,41 @@
+/*
+ * Student Name: Usman Sattar
+ * Student Number: G00345816
+ * 
+ * Title: Rapid Encryption using the Four-Square Cipher
+ */
+
+// Package Name: ie.gmit.sw
 package ie.gmit.sw;
 
 public class Pair<T> {
 
 	public Pair() {
-		data1 = null;
-		data2 = null;
+		dataOne = null;
+		dataTwo = null;
 	}
 
-	public Pair(T d1, T d2) {
-		data1 = d1;
-		data2 = d2;
+	public Pair(T dOne, T dTwo) {
+		dataOne = dOne;
+		dataTwo = dTwo;
 	}
 
 	public T get_first() {
-		return data1;
+		return dataOne;
 	}
 
 	public T get_second() {
-		return data2;
+		return dataTwo;
 	}
 
-	public void set_first(T d1) {
-		data1 = d1;
+	public void set_first(T dOne) {
+		dataOne = dOne;
 	}
 
-	public void set_second(T d2) {
-		data2 = d2;
+	public void set_second(T dTwo) {
+		dataTwo = dTwo;
 	}
 
-	private T data1;
-	private T data2;
+	private T dataOne;
+	private T dataTwo;
 }
